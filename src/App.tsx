@@ -142,6 +142,7 @@ import AdminHealthMonitoring from "./pages/admin/AdminHealthMonitoring";
 import AdminWhiteLabel from "./pages/admin/AdminWhiteLabel";
 import AdminLiveSessions from "./pages/admin/AdminLiveSessions";
 import { SessionTracker } from "@/hooks/useSessionTracker";
+import { Seo } from "@/components/Seo";
 
 const queryClient = new QueryClient();
 
@@ -173,6 +174,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <AuthProvider>
+          <Seo />
           <InstallPrompt />
           <SessionTracker />
           <SiteScrollToTop />
